@@ -53,10 +53,20 @@
                 </div>
             </div>
             <div class="navbar-bottom">
-                <div class="navbar-bottom-logo">
+                <div class="navbar-bottom-container">
+                    <div class="navbar-bottom-logo">
                         <img src="https://cdn.dsmcdn.com/seller-center/shared/header/assets/trendyol-logo.svg" alt="trendyol-logo">
+                    </div>
+                    <div class="notification-user-bars" style="display: none;">
+                    <i class="fa-solid fa-bell fa-xl"></i>
+                    <i class="fa-solid fa-user fa-xl"></i>
+                    <div id="toggle_button" onclick="categories_on()">
+                        <i  class="fa-solid fa-bars fa-xl"></i>
+
+                    </div>
+                    </div>
                 </div>
-                <div class="navbar-bottom-categories">
+                <div class="navbar-bottom-categories display-on">
                     <ul>
                         <li>
                             
@@ -81,9 +91,11 @@
                         </li>
                         <li>
                             Mağaza Yönetimi 
+                            <i style="display: none;" class="fa-solid fa-angle-down display-on"></i>
                         </li>
                         <li>
-                            Reklam Yönetimi                           
+                            Reklam Yönetimi
+                            <i style="display: none;" class="fa-solid fa-angle-down display-on"></i>                           
                         </li>
                         <li>
                             Gelişim Merkezi
@@ -121,40 +133,42 @@
                         <div class="main-section-top-2">
                             <div class="operation-state">
                                 <div class="state-1">
-                                    <div>
-                                        <img src="images/Chart.png" alt="" height="32px" width="32px">
-                                    </div>
-                                    <div>
-                                        <div class="state-1-operation-spans">
-                                            <span>Operasyon Durumu</span>
-                                            <span style="margin-left: 8px;" class="state-information">i</span>
+                                    <div style="display: flex;">
+                                        <div>
+                                            <img src="images/Chart.png" alt="chart" height="32px" width="32px">
                                         </div>
-                                        <span style="color: #0BC15C;">Normal</span>
+                                        <div style="margin-left: 10px;">
+                                            <div class="state-1-operation-spans">
+                                                <div>Operasyon Durumu</div>
+                                                <div style="margin-left: 8px;width: 16px !important;" class="state-information">i</div>
+                                            </div>
+                                            <div style="color: #0BC15C;">Normal</div>
+                                        </div>
                                     </div>
                                     <div >
                                         <i class="fa-solid fa-angle-right"></i>
                                     </div>
                                 </div>
                                 <div>
-                                    <hr class="hrvertical">
+                                    <hr id="hr-1" class="hrvertical">
                                 </div>
                                 <div class="state-2">
                                     <div class="state-2-div">
                                         <div style="display: flex;justify-content: space-between;">
                                             <span>Güncel Termin Süresi:</span>
-                                            <span style="color: black; font-weight: 700;">2 Gün</span>
+                                            <span style="color: black; font-weight: 700;text-decoration: underline;">2 Gün</span>
                                         </div>
-                                        <div>
-                                            <span style="display: flex;justify-content: space-between;">Bugün Kargolanması Gerekenler:</span>
-                                            <span style="color: black;font-weight: 700;">
+                                        <div style="display: flex;justify-content: space-between;">
+                                            <div style="display: flex;justify-content: space-between;">Bugün Kargolanması Gerekenler:</div>
+                                            <div style="color: black;font-weight: 700;width:100px !important;text-align: end;">
                                                 <span class="state-information">i</span>
                                                 0 Sipariş
-                                            </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <hr class="hrvertical">
+                                    <hr id="hr-2" class="hrvertical">
                                 </div>
                                 <div class="state-3">
                                     <div class="state-3-div" style="margin-left: 14px;">
@@ -170,9 +184,9 @@
                                                 </span>
                                             </span>
                                         </div>
-                                        <div style="font-weight: 900;color: black;">
+                                        <div style="font-weight: 900;color: black;display: flex;align-items: center;">
                                             0 Puan
-                                            <i class="fa-solid fa-angle-right"></i>
+                                            <i style="margin-left: 8px;" class="fa-solid fa-angle-right"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -195,7 +209,7 @@
                                         <img src="https://cdn.dsmcdn.com/seller-center/dashboard/images/live-monitor.gif" style="width: 16px;margin-right: 4px;"  alt="live-monitor">
                                         Canlı Performansım
                                     </span>
-                                    <span style="background-color: #273142;color: #fff;border-radius: 4px;width: 20px;height: 24px;box-sizing: border-box;display: flex;justify-content: center;align-items: center;">
+                                    <span class="angle-down">
                                         <i class="fa-solid fa-angle-down fa-2xs"></i>
                                     </span>
                                 </span>
@@ -300,9 +314,10 @@
                                     <div class="action-box-li">
                                         <span class="action-box-li-1">
                                             Hızlı Teslimat Önerilen
+                                            <span style="background-color: #6e7787;width: 14px;height: 14px;" class="state-information">i</span>
                                         </span>
                                         <span class="action-box-li-2">
-                                            0
+                                            46
                                         </span>
                                     </div>
                                     <div class="action-box-li">
@@ -318,7 +333,7 @@
                                             Tükenenler
                                         </span>
                                         <span class="action-box-li-2">
-                                            0
+                                            994
                                         </span>
                                     </div>
                                 </div>
@@ -329,25 +344,31 @@
                                     <div class="action-box-li">
                                         <span class="action-box-li-1">
                                             Yıldız Ürün Etiketi
+                                            <span style="background-color: #6e7787;width: 14px;height: 14px;" class="state-information">i</span>
                                         </span>
                                         <span class="action-box-li-2">
-                                            0
+                                            <span>0</span>
+                                            <span style="font-size: 12px;color: #95A1B5;">/ 0</span>
                                         </span>
                                     </div>
                                     <div class="action-box-li">
                                         <span class="action-box-li-1">
                                             Flaş Ürünler
+                                            <span style="background-color: #6e7787;width: 14px;height: 14px;" class="state-information">i</span>
                                         </span>
                                         <span class="action-box-li-2">
-                                            0
+                                            <span>0</span>
+                                            <span style="font-size: 12px;color: #95A1B5;">/ 0</span>
                                         </span>
                                     </div>
                                     <div class="action-box-li">
                                         <span class="action-box-li-1">
                                             Kampanyalar
+                                            <span style="background-color: #6e7787;width: 14px;height: 14px;" class="state-information">i</span>
                                         </span>
                                         <span class="action-box-li-2">
-                                            0
+                                            <span>0</span>
+                                            <span style="font-size: 12px;color: #95A1B5;">/ 0</span>
                                         </span>
                                     </div>
                                     <div class="action-box-li">
@@ -355,7 +376,7 @@
                                             Önerilen Promosyon
                                         </span>
                                         <span class="action-box-li-2" class="action-box-li-2">
-                                            0
+                                            2
                                         </span>
                                     </div>
                                 </div>
@@ -374,7 +395,7 @@
                                     Fatura Performansı
                                     <span style="background-color: #6e7787;" class="state-information">i</span>
                                 </span>
-                                <span>
+                                <span style="text-align: end !important;">
                                     <i class="fa-solid fa-graduation-cap fa-sm" style="color: #007bff;"></i>
                                     <span class="rubik-12px-600" style="color: #007bff;">
                                         Trendyol Akademi
@@ -414,5 +435,6 @@
         </main>
     <!-- Section-End -->
 
+    <script src="main.js"></script>
 </body>
 </html>
