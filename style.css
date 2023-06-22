@@ -304,6 +304,17 @@ h5{
                 font-family: "Rubik";
             }
 
+            .main-box{
+                flex-direction: column !important;
+            }
+
+            .main-left{
+                width: 100% !important;
+            }
+            
+            .main-right{
+                width: 100% !important;
+            }
 
 
         }
@@ -437,7 +448,7 @@ h5{
     /* Article-Start */
     .main-section-performance{
         box-sizing: border-box;
-        max-width: 66%;
+        max-width: 100%;
         height: 258px;
         background: #FFFFFF;    
         margin: 30px 0 30px 0;
@@ -492,24 +503,206 @@ h5{
         font-size: 12px;
         font-weight: 700;
     }
+
+    .first{
+        height: 1500px;
+    }
+
+    .main-left{
+        display: inline-block !important;
+        width: 66%;
+        margin-top: 0px;
+    }
+
+    .main-right{
+        box-sizing: border-box;
+        width: 32%;
+        height: 500px;
+        display: inline-block;
+        border-radius: 6px;
+        margin: 30px 0 0 0;
+    }
+
+    .main-box{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .slider{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        height: 224px;
+        border-radius: 6px;
+        background-image: linear-gradient(to right, #551f9b, #29d5ab);
+        font-size: 16px;
+        font-family: "Rubik";
+
+    }
+
+    .bill-performance{
+        box-sizing: border-box;
+        width: 100%;
+        max-height: 210px;
+        border-radius: 6px;
+        background-color: #FFFFFF;
+        margin-top: 30px;
+        padding: 24px;
+    }
     
-    /* Article-End*/
-
-    
-/* Main-End */
-
-
-
-
-
-
-
-/* 
-
-.deneme{
-        display: flex !important;
+    .flex-between{
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-*/
+    .rubik-12px-600{
+        font-family: "Rubik","sans-serif";
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .rubik-14px-400{
+        font-family: "Rubik","sans-serif";
+        font-size: 14px;
+        font-weight: 400;
+        color: #6e7787;
+    }
+
+    .rubik-16px-600{
+        font-family: "Rubik","sans-serif";
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .yuzdeyuz{
+        padding: 21px 12px 23px 12px ;
+        color: #0BC15C;
+        background-color: #E7F9EF;
+        border-radius: .375rem;
+        height: 62px;
+        max-width: 65px;
+        box-sizing: border-box;
+    }
+
+    .bill-table{
+        display: flex;
+        flex-direction: row;
+        justify-content:stretch;
+        width: 100%;
+        border: 1px solid #afbbca;
+        padding: 12px;
+        border-radius: .375rem;
+        min-height: 60px;
+        max-height: 75px !important;
+        margin-left: 20px;
+    }
+
+    .bill-table-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .bill-table-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-left: 1px solid #afbbca;
+        padding-left: 8px;
+        width: 50%;
+
+    }
+
+    .bill-performance-main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bill-performance-date{
+        color: #95A1B5;
+    }
+
+    .main-section-action{
+        font-family: "Rubik";
+        border-radius: .375rem;
+        padding: 24px;
+        height: auto;
+        background-color: #fff;
+    }
+
+    .action-boxs{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 24px;
+    }
+
+    .action-box{
+        width: 100% !important;
+        background-color: #F7F7FA;
+        border-radius: .375rem;
+        width: max-content;
+        padding: 16px;
+    }
+
+    .action-box-li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        background-color: #FFFFFF;
+        border-radius: .25rem;
+        margin-bottom: .5rem;
+        height:12px;
+    }
+    
+    .action-box-li-1{
+        color: #6e7787;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .action-box-li-2{
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .title{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.7px;
+    }
+
+    .title-sm{
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    @media screen and (max-width:770px) {
+        
+        .action-boxs{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+        }
+
+        .action-box{
+            width: auto !important;
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    /* Article-End*/
+
+    
+/* Main-End */
