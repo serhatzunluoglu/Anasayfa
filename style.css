@@ -217,17 +217,6 @@ h5{
         }
     }
 
-    /* .deneme{
-        display: inline-flex !important;
-        justify-content: space-between;
-        align-items: center;
-        column-gap: 3px;
-    }
-
-    .deneme p{
-        width: min-content;
-    } */
-
 /* Navbar-End */
 
 
@@ -533,7 +522,7 @@ h5{
         }
     /* main-section-top-2-end */
 
-    /* Article-Start */
+    
     .main-section-performance{
         box-sizing: border-box;
         max-width: 100%;
@@ -801,8 +790,5 @@ h5{
         }
 
     }
-
-    /* Article-End*/
-
-    
+ 
 /* Main-End */

@@ -4,7 +4,7 @@ let bars= document.querySelector("#toggle_button_1");
 let xmark= document.querySelector("#toggle_button_2");
 
 
-function categories_on(){
+function categories_on_off(){
     if(buton.classList.contains("display-on")==true){
         buton.classList.remove("display-on");
         buton.classList.add("display-off");
