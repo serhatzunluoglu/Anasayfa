@@ -1,3 +1,3 @@
 # Trendyol Partner
 - Freelance olarak yaptığım  bir proje
-- Projeye buradan ulaşabilirsiniz
+- Projeye [buradan](https://partner-trendyol.netlify.app/) ulaşabilirsiniz.
