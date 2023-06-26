@@ -5,6 +5,7 @@ body{
     padding: 0;
     width:100%;
     background-color: #F1F2F7;
+    overflow-x: hidden;
 }
 
 ul{
@@ -25,6 +26,18 @@ h5{
 }
 
 /* Navbar-Start */
+
+    #toggle_button_1{
+        width: 20px;
+        height: 20px;
+        padding-top: 4px;
+    }
+
+    #toggle_button_2{
+        width: 20px;
+        height: 20px;
+        padding-top: 4px;
+    }
 
     .navbar{
         width: 100%;
@@ -73,7 +86,7 @@ h5{
     }
 
     .navbar-bottom{
-        width: 100%;
+        /* width: 100%; */
         display: flex;
         background-color: #273142;
         color: rgb(149, 161, 181);
@@ -499,7 +512,7 @@ h5{
         }
 
         .question-mark{
-            width: 61px;
+            min-width: 61px;
             height: 56px;
             background: #FFFFFF;
             margin: 0 0 0 16px;
@@ -520,6 +533,17 @@ h5{
             justify-content: center;
             align-items: center;
         }
+
+        @media screen and (min-width:480px) and (max-width:680px) {
+
+            .main-section-top-2{
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+            }
+
+        }
+
     /* main-section-top-2-end */
 
     
