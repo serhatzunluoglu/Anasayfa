@@ -5,7 +5,7 @@ body{
     padding: 0;
     width:100%;
     background-color: #F1F2F7;
-    overflow-x: hidden;
+    overflow-x:hidden !important;
 }
 
 ul{
@@ -630,7 +630,7 @@ h5{
     .main-right{
         box-sizing: border-box;
         width: 32%;
-        height: 500px;
+        height: 460px;
         display: inline-block;
         border-radius: 6px;
         margin: 30px 0 0 0;
@@ -816,3 +816,16 @@ h5{
     }
  
 /* Main-End */
+
+/* Footer-Start */
+
+    footer{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 900;
+        text-shadow: 1px 1px 10px #000;
+    }
+
+/* Footer-End */
